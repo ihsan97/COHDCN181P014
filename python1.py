@@ -2,7 +2,7 @@ a=0
 
 sum=0
 while True:
-	val=raw_input("Enter Value: ")
+	a=raw_input("Enter Value: ")
     
 	if a=='':
 		break
