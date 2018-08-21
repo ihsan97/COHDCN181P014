@@ -42,7 +42,7 @@ sniffer = socket.socket(socket.AF_PACKET, socket.SOCK_RAW, socket.htons (0x800))
 while true:
 	
 	data = sniffer.recvfrom(65535)[0]
-	ip = ip_heaer(data[14:])
+	ip = ip_header(data[14:])
 
 	print('.....IPv4 Packet.....')
 	print 'Version:' , ip.version
